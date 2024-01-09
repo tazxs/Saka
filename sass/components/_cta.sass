@@ -1,0 +1,176 @@
+$clr-white: #fff
+$clr-black: #19242F
+$clr-light-yellow: #BFA470
+$clr-dark-yellow: #DBC08D
+$clr-grey: rgba(255, 255, 255, 0.25)
+$clr-footer-grey: rgba(255, 255, 255, 0.50)
+$transition: .2s all
+$margin: 16rem
+$margin2: 3.9rem
+$margin3: 3rem
+html
+    font-size: 10px
+body
+    font-family: 'Montserrat', sans-serif
+    position: relative
+    overflow-x: hidden
+.container
+    margin-left: $margin
+    margin-right: $margin
+.header
+    &::before
+        content: ""
+        background-image: url("../img/0d859403b5c806f25861db6dec6424aa 1.png")
+        position: absolute
+        width: 1596px
+        right: -55rem
+        top: 181rem
+        background-repeat: no-repeat
+        height: 259.3rem
+        pointer-events: none
+        z-index: -1
+        height: 53.3rem
+@media (max-width: 698px)
+    .container
+        margin-left: $margin2
+        margin-right: $margin2
+    .header
+        &::before
+            display: none
+    .main
+        &::before
+            content: ""
+            background-image: url("../img/0d859403b5c806f25861db6dec6424aa 1.png")
+            position: absolute
+            width: 1596px
+            right: -55rem
+            top: 272rem
+            background-repeat: no-repeat
+            height: 259.3rem
+            pointer-events: none
+            z-index: -1
+            height: 53.3rem
+@media (max-width: 320px)
+    .container
+        margin-left: $margin2
+        margin-right: $margin2
+    .main
+        &::before
+            display: none
+    .hero
+        &::before
+            content: ""
+            background-image: url("../img/0d859403b5c806f25861db6dec6424aa 1.png")
+            position: absolute
+            width: 603px
+            right: -7rem
+            top: 485rem
+            background-repeat: no-repeat
+            height: 259.3rem
+            pointer-events: none
+            z-index: -1
+            height: 53.3rem
+.none
+    display: none
+*
+    padding: 0px
+    margin: 0px
+    border: none
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+:focus,
+:active
+    outline: none
+
+a:focus,
+a:active
+    outline: none
+
+/* Links */
+
+a,
+a:link,
+a:visited
+    /* color: inherit; */
+    text-decoration: none
+    /* display: inline-block; */
+
+a:hover
+    /* color: inherit; */
+    text-decoration: none
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main
+    display: block
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+    font-size: inherit
+    font-weight: inherit
+
+ul,
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+img,
+svg
+    max-width: 100%
+    height: auto
+
+address
+    font-style: normal
+
+/* Form */
+
+input,
+textarea,
+button,
+select
+    font-family: inherit
+    font-size: inherit
+    color: inherit
+    background-color: transparent
+
+input::-ms-clear
+    display: none
+
+button
+    display: inline-block
+    box-shadow: none
+    background-color: transparent
+    background: none
+    cursor: pointer
+
+input:focus,
+input:active,
+button:focus,
+button:active
+    outline: none
+
+button::-moz-focus-inner
+    padding: 0
+    border: 0
+
+label
+    cursor: pointer
+
+legend
+    display: block

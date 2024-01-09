@@ -1,0 +1,61 @@
+@import './_cta'
+.cert
+    margin-top: 27.2rem
+    .cert__content
+        .cert__title
+            text-align: center
+
+            color: $clr-black
+            font-size: 2.6rem
+            font-weight: 600
+            letter-spacing: 0.52px
+        .cert__picture
+            display: flex
+            align-items: center
+            margin-top: 3rem
+            i
+                margin-right: 2rem
+                margin-left: 2rem
+
+                font-size: 1.5rem
+
+                cursor: pointer
+                padding: 1.3rem
+
+                background-color: #f8f8f8
+                border-radius: 100px
+            img
+                margin-left: 4rem
+@media (max-width: 698px)
+    .cert
+        margin-top: 79.2rem
+        .cert__content
+            display: flex
+            align-items: center
+            flex-direction: column
+            .cert__title
+                max-width: 46rem
+                font-size: 2.6rem
+            .cert__picture
+                .cert__element
+                    display: none
+                img
+                    margin-left: 1rem
+@media (max-width: 320px)
+    .cert
+        margin-left: $margin3
+        margin-top: 149.5rem
+        .cert__content
+            .cert__title
+                font-size: 2rem
+            .cert__picture
+                display: flex
+                align-items: center
+                i
+                    position: absolute
+                    left: 2rem
+                .mobile
+                    width: 19.5rem
+                    height: 28rem
+                .right
+                    left: 25.5rem

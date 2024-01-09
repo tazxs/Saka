@@ -1,0 +1,122 @@
+@import './_cta'
+.product
+    margin-top: 12rem
+    .product__content
+        height: 65rem
+        background: #F8F8F8
+        .product__title
+            color: $clr-black
+            font-size: 2.6rem
+            font-weight: 600
+            letter-spacing: 0.52px
+
+            margin-bottom: 3rem
+        .product__flex
+            display: flex
+            align-items: center
+            i
+                position: absolute
+
+                font-size: 2rem
+                
+                padding: 1.3rem
+
+                border-radius: 100px
+                background-color: $clr-white
+
+                cursor: pointer
+
+                left: 10rem
+                &:last-child
+                    left: 135rem
+            .product__card
+                margin-right: 4rem
+
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+
+                width: 26rem
+                height: 43.1rem
+
+                background-color: $clr-white
+                border-radius: 1.6rem
+                h2,.card-top,.btn
+                    padding-left: 3rem
+                h2
+                    margin-top: 2.2rem
+                    color: $clr-black
+                    font-size: 1.8rem
+                    letter-spacing: 0.36px
+                    font-weight: 600
+                .card-top
+                    display: flex
+                    align-items: flex-end
+                    column-gap: 1.7rem
+                    h3
+                        color: #263669
+                        font-size: 2.2rem
+                        font-weight: 600
+                        letter-spacing: 0.44px
+
+                        margin-top: 1.1rem
+                    p
+                        color: rgba(25, 36, 47, 0.50)
+                        font-size: 1.2rem
+                        font-weight: 500
+                        letter-spacing: 0.24px
+                .btn
+                    margin-top: 1.2rem
+                    margin-left: 2rem
+
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+
+                    border-radius: 100px
+                    background: $clr-light-yellow
+
+                    width: 20rem
+
+                    padding: 1.7rem 2.5rem
+
+                    color: $clr-black
+                    font-size: 1.4rem
+                    letter-spacing: 0.34px
+                    font-weight: 700
+@media (max-width: 698px)
+    .product
+        .product__content
+            margin-top: 17rem
+            .product__flex
+                i
+                    position: absolute
+                    left: 1rem
+                    &:last-child
+                        left: 59rem
+                .product__card
+                    &:nth-child(5)
+                        display: none
+                    &:nth-child(4)
+                        display: none
+@media (max-width: 320px)
+    .product
+        .product__content
+            margin-top: 8rem
+            .product__title
+                font-size: 2rem
+                width: 28rem
+                font-size: 1.8rem
+            .product__flex
+                .product__card
+                    &:last-child
+                        display: none
+                    &:nth-child(3)
+                        display: none
+                    img
+                        margin-left: 1.5rem
+                i
+                    position: absolute
+                    left: 2rem
+                    &:last-child
+                        left: 26rem

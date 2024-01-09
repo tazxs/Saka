@@ -1,0 +1,118 @@
+@import './_cta'
+.name
+    margin-top: 12.1rem
+    .name__content
+        .name__title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            h2
+                max-width: 64rem
+                color: $clr-black
+                font-size: 2.6rem
+                font-weight: 600
+                line-height: 133.4%
+                letter-spacing: 0.52px
+            .name__arrow
+                display: flex
+                column-gap: 1rem
+                i
+                    border-radius: 16px
+                    background: #F8F8F8
+                    width: 6rem
+                    height: 6rem
+
+                    display: grid
+                    place-items: center
+                    cursor: pointer
+
+                    font-size: 2rem
+                    &:last-child
+                        background-color: $clr-dark-yellow
+        .name__flex
+            display: grid
+            grid-template-columns: repeat(3, 36rem)
+            grid-template-rows: repeat(3, 38rem)
+            
+            height: 36rem
+
+            column-gap: 4rem
+            margin-top: 3rem
+            .name__card
+                background: #F8F8F8
+                border-radius: 1.6rem
+                padding: 3rem
+
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+                transition: $transition
+                &:hover
+                    background-color: $clr-light-yellow
+                &:hover a
+                    color: $clr-grey
+                h2
+                    max-width: 30rem
+
+                    color: $clr-black
+                    font-size: 1.2rem
+                    line-height: 164.9%
+                    letter-spacing: 0.24px
+                a
+                    color: $clr-black
+                    font-size: 1.6rem
+                    font-weight: 600
+                    letter-spacing: 0.32px
+                    transition: $transition
+@media (max-width: 698px)
+    .name
+        max-width: 62rem
+        .name__content
+            .name__title
+                .name__arrow
+                    display: none
+            .name__flex
+                grid-template-columns: 38rem 38rem 0
+                grid-gap: 2rem
+                .name__card
+                    background-color: #F8F8F8
+                    &:last-child
+                        display: none
+            .name__arrow-nout
+                display: flex
+                column-gap: 1rem
+                margin-top: 5rem
+                i
+                    border-radius: 16px
+                    background: #F8F8F8
+
+                    width: 6rem
+                    height: 6rem
+                    display: grid
+                    place-items: center
+                    cursor: pointer
+
+                    font-size: 2rem
+                    &:last-child
+                        background-color: $clr-dark-yellow
+@media screen and ( max-width: 320px)
+    .name
+        margin-top: 8rem
+        .name__content
+            .name__title
+                h2
+                    font-size: 2rem
+                    max-width: 29.9rem
+                    line-height: 133.4%
+                    letter-spacing: 0.4px
+            .name__flex
+                grid-template-columns: 26rem 0 0
+                grid-template-rows: 55rem 0 0
+                .name__card
+                    padding: 3rem 3rem 4.4rem 3rem
+                    a
+                        padding-top: 2rem
+                        padding-block: 4rem
+            .name__arrow-nout
+                margin-top: 20.4rem

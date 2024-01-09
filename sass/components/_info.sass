@@ -1,0 +1,51 @@
+@import './_cta'
+.info
+    margin-top: 9.6rem
+    .info__content
+        .info__title
+            color: $clr-black
+            font-size: 2.2rem
+            font-weight: 600
+            letter-spacing: 0.44px
+        .info__flex
+            display: flex
+            column-gap: 4.2rem
+            margin-top: 3.3rem
+            .info__card
+                transition: $transition
+                &:hover
+                    transform: scale(1.05)
+                h2
+                    color: $clr-black
+                    font-size: 1.4rem
+                    font-weight: 600
+                    letter-spacing: 0.28px
+                    margin-top: 2rem
+                    transition: .1s
+                p
+                    color: $clr-black
+                    font-size: 1.4rem
+                    letter-spacing: 0.24px
+                    margin-top: 0.5rem
+                    max-width: 33rem
+@media (max-width: 698px)
+    .info
+        margin-top: 6rem
+        .info__content
+            .info__title
+                font-size: 2rem
+                max-width: 50rem
+            .info__flex
+                display: grid
+                grid-template-columns: repeat(2, 30rem)
+                grid-gap: 2rem
+@media (max-width: 320px)
+    .info
+        margin-top: 7rem
+        .info__content
+            .info__title
+                max-width: 30rem
+                font-size: 2rem
+            .info__flex
+                grid-template-columns: 25rem
+                margin-top: 2rem
